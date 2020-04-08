@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Spells>
+  <Spell itemID="PlaceholderWeapon">
+    <Stats animBlast="BasicCast" animShot="LeaSphere" shotSound="mark_02" cooldown="0.05"
+      setToGunPoint="Both" yVariance="0"></Stats>
+    <HitAllies></HitAllies>
+    <HitEnemies>true</HitEnemies>
+    <HitSelf></HitSelf>
+    <HitStructures>true</HitStructures>
+    <Name>Placeholder Weapon</Name>
+    <Tags>Weapon</Tags>
+    <Unlock></Unlock>
+    <Action>Multishot</Action>
+    <Description>It ########</Description>
+    <Meta>Fires small shots</Meta>
+    <Flavor>&lt;b&gt;FLAVOR&lt;/b&gt; text.</Flavor>
+    <Brand></Brand>
+    <Mana>0</Mana>
+    <Damage>2</Damage>
+    <Shots>1</Shots>
+    <Tiles>1</Tiles>
+    <Location>Current</Location>
+    <TimeBetweenShots>0.02</TimeBetweenShots>
+    <ShotVelocity>700</ShotVelocity>
+    <ShotDuration>1</ShotDuration>
+    <ShotDelay></ShotDelay>
+    <CastDelay>0</CastDelay>
+    <CastDuration></CastDuration>
+    <BlastDuration></BlastDuration>
+    <DestroyOnHit>true</DestroyOnHit>
+    <OnCast></OnCast>
+  </Spell>
+</Spells>
