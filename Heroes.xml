@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Beings>
-  <Being beingID="Default">
+  <Being beingID="The Default">
     <Name>The Default</Name>
-    <Title>Default</Title>
+    <Title>Loadout Name</Title>
     <Tags>Campaign, Default, Unlock</Tags>
-    <Description>A ????? who wants to TOUCH.</Description>
+    <Description>A ??????? who wants to TOUCH.</Description>
     <Flavor>Flavor Text.</Flavor>
     <Weapon>PlaceholderWeapon</Weapon>
     <Health>1200</Health>

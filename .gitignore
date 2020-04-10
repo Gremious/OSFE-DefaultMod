@@ -5,6 +5,9 @@
 out/
 *.iml
 
+#VSCode
+*.code-workspace
+
 # Eclipse
 .classpath
 .project
