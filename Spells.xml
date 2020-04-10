@@ -27,4 +27,30 @@
     <DestroyOnHit>true</DestroyOnHit>
     <OnCast value="BladeThrow" amount="1">CastSpell</OnCast>
   </Spell>
+  <Spell itemID="ModSpell">
+    <Stats introSound="woosh_large" recoveryTime=".5" animBlast="FireGunBlast" setToGunPoint="None"></Stats>
+    <HitAllies></HitAllies>
+    <HitEnemies>true</HitEnemies> 
+    <HitSelf></HitSelf>
+    <HitStructures>true</HitStructures>
+    <Name>Mod Spell</Name>
+    <Tags>Player, Demo, Live, PvP</Tags>
+    <Action>CoolStepSlash</Action>
+    <Description>Executes a custom function.</Description>
+    <Meta>Fires small shots</Meta>
+    <Flavor>while (true) {break;}</Flavor>
+    <Brand>Doublelift</Brand>
+    <Mana>0</Mana>
+    <Damage>Zero</Damage>
+    <Shots>1</Shots>
+    <Tiles>1</Tiles>
+    <Location Position="3">Front</Location>
+    <TimeBetweenShots>0</TimeBetweenShots>
+    <ShotVelocity>0</ShotVelocity>
+    <ShotDuration>0.15</ShotDuration>
+    <ShotDelay></ShotDelay>
+    <CastDelay>0</CastDelay>
+    <BlastDuration>0</BlastDuration>
+    <DestroyOnHit></DestroyOnHit>
+  </Spell>
 </Spells>
