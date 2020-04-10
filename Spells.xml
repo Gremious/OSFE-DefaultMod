@@ -1,33 +1,30 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8" ?>
 <Spells>
   <Spell itemID="PlaceholderWeapon">
-    <Stats animBlast="BasicCast" animShot="LeaSphere" shotSound="mark_02" cooldown="0.05"
-      setToGunPoint="Both" yVariance="0"></Stats>
+    <Stats cooldown="0.5"></Stats>
     <HitAllies></HitAllies>
-    <HitEnemies>true</HitEnemies>
+    <HitEnemies></HitEnemies>
     <HitSelf></HitSelf>
-    <HitStructures>true</HitStructures>
+    <HitStructures></HitStructures>
     <Name>Placeholder Weapon</Name>
     <Tags>Weapon</Tags>
     <Unlock></Unlock>
-    <Action>Multishot</Action>
-    <Description>It ########es.</Description>
-    <Meta>Fires small shots</Meta>
+    <Action></Action>
+    <Description>Throw blades at enemies.</Description>
+    <Meta>Fires bouncing blades.</Meta>
     <Flavor>&lt;b&gt;FLAVOR&lt;/b&gt; text.</Flavor>
     <Brand></Brand>
     <Mana>0</Mana>
-    <Damage>2</Damage>
-    <Shots>1</Shots>
-    <Tiles>1</Tiles>
+    <Damage>60</Damage>
+    <Shots></Shots>
+    <Tiles></Tiles>
     <Location>Current</Location>
-    <TimeBetweenShots>0.02</TimeBetweenShots>
-    <ShotVelocity>700</ShotVelocity>
+    <TimeBetweenShots>0</TimeBetweenShots>
+    <ShotVelocity>400</ShotVelocity>
     <ShotDuration>1</ShotDuration>
     <ShotDelay></ShotDelay>
     <CastDelay>0</CastDelay>
-    <CastDuration></CastDuration>
-    <BlastDuration></BlastDuration>
     <DestroyOnHit>true</DestroyOnHit>
-    <OnCast></OnCast>
+    <OnCast value="BladeThrow" amount="1">CastSpell</OnCast>
   </Spell>
 </Spells>
