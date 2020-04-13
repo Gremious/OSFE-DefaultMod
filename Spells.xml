@@ -36,7 +36,7 @@
     <Name>Mod Spell</Name>
     <Tags>Player, Demo, Live, PvP</Tags>
     <Action>CoolStepSlash</Action>
-    <Description>Executes a custom function.</Description>
+    <Description>Executes a custom function: Move on to the enemy field.</Description>
     <Meta>Fires small shots</Meta>
     <Flavor>while (true) {break;}</Flavor>
     <Brand>Doublelift</Brand>
