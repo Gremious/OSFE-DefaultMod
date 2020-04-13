@@ -1,5 +1,153 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <Spells>
+  <Spell itemID="EmptySpell">
+    <!--   
+    animCast - Animation name to play on spell cast
+    animHit - Animation name to play on spell hitting target
+    animBlast - Animation name to play on the location the spell lands, regardless if it hits anything
+    animShot - Bullet/Shot animation to play
+    animObj - Anything that's not a bullet: Bombs, Turrets (summons), Hazel boss' crushers, etc. 
+    animWarning - The "danger/catch/heal" tile animation that plays on the tile the spell will land on. 
+    arcType - The arc the spell shot will make while traveling: Normal, Wild, WildBi, or CastSlot. See Arc() in Projectile.cs.
+    bending - The size of the bend in the arc
+    castSound - Sound to play on cast
+    cooldown - Cooldown before the spell can be cast again. Usually used on weapons.
+    dashDistance - ???
+    dashHeight - ???
+    destroyOnDeath - Destroy spell if the being that cast it dies (usually used for enemmy spells)
+    effectLayer - If true, adds the spell to the "Effects" sorting layer in the spriteRenderer. What impact that actually has, idk.
+    faceVelocity - ???
+    fireAnim - Whether to trigger the weapon-firing animation (e.g. for laser shots)
+    fireAnimLate - Whether to trigger the weapon-firing animation, but a bit later.
+    fireLoop - Whether to trigger and loop the weapon firing animation. Can be Normal, PerShot, PerTile or While.
+    hitSound - Sound to play on hit.
+    hitboxHeight -  Hitbox height in tiles. Defaults to 1.
+    hitboxWidth - Hitbox width in tiles. Defaults to 1.
+    
+    hitboxOffsetX - The X offset of the spell, in tiles, e.g. whether a shot will hit from a tile above or below.
+    hitboxOffsetY - The Y offset of the spell, in tiles, e.g. whether a shot will hit from a tile behind or in front.
+    spawnOffsetX - The X offset of the spell "object" in tiles, e.g. whether the shot appears in a tile above or below.
+    spawnOffsetY - The Y offset of the spell "object" in tiles, e.g. whether the shot appears in a behind or in front.
+    (NOTE: these can be set to, for example, "-0.25" for more precision)
+    
+    introDelay - ???
+    introSound - Sound to play
+    lineTracer - The color of the shot tracer, eg "#b832d0" (red) for laser shots.
+    onHitTriggerArts - ??? Whether to trigger the artifacts of the being being hit with the spell when it hits.
+    pierceDefense - Whether the spill will ignore defence.
+    pierceShield - Whether the spill will ignore shield.
+    recoveryTime - A wait period after the spell is cast, usually used for dashes to indicate how long you remain on the enemy field.
+    setToGunPoint - Whether the spell should be fired from the enteties gunpoint position (Hero's/Enemy's Gunpoint Position as defined in their xml). Usually false.
+    shotSound - A sound to play whenever any shot is fired.
+    slashLocation - ???
+    timeToTravel - The time it takes for the projectile to reach it's destination. Also used to indicate how long a warning will last.
+    warningSound - ??? Sound to play when a warning appears.
+    yVariance - A max value for a random variance in the Y of the spell shot. (e.g. machine-gun bullets not being on the same straight line) 
+    -->
+    <Stats></Stats>
+    <!--Register a lua function by name to be called on cast-->
+    <Action></Action>
+    <!--Duration of the blast effect when spell hits-->
+    <BlastDuration></BlastDuration>
+    <!--Spell Brand (Anima, Slashfik, etc.)-->
+    <Brand></Brand>
+    <!--Freeze duration before the spell is cast-->
+    <CastDelay></CastDelay>
+    <!--Unfrozen duration before the spell is cast-->
+    <CastDuration></CastDuration>
+    <!--Damage-->
+    <Damage></Damage>
+    <!--Description-->
+    <Description></Description>
+    <!--False: Piercing. True: Not Piercing. Default: Piercing-->
+    <DestroyOnHit></DestroyOnHit>
+    <!--On-kill effect (see ShisoGun in spells.xml)-->
+    <Execute></Execute>
+    <!--Spell flavortext-->
+    <Flavor></Flavor>
+    <!--Action to do if you have flow (i.e. flowcast)-->
+    <Flow></Flow>
+    <!--Can hit allies. Default: false-->
+    <HitAllies></HitAllies>
+    <!--Can hit enemies. Default: false-->
+    <HitEnemies></HitEnemies>
+    <!--Can hit self. Default: false-->
+    <HitSelf></HitSelf>
+    <!--Can hit structures. Default: false-->
+    <HitStructures></HitStructures>
+    <!--Effect while in cast slot. See any ring spell.-->
+    <Hold></Hold>
+    <!--Location spell will hit, see location.cs. Also see Shape.cs for shape spell will hit in said location (e.g. Crossfire spell).-->
+    <Location></Location>
+    <!--Mana cost-->
+    <Mana></Mana>
+    <!--???-->
+    <MetaDISABLED></MetaDISABLED>
+    <!--Name of Spell-->
+    <Name></Name>
+    <!--Action to do on spell cast. e.g. gain Flow or Consume.-->
+    <OnCast></OnCast>
+    <!--Action to do when spell hits a target. e.g. Apply Frost or Root-->
+    <OnHit></OnHit>
+    <!--
+    Creates an arbitrary parameter(s) that you can use in your lua action, e.g.:
+    xml:
+    <Params SuperCoolNumber="7"></Params>
+    
+    lua:
+    if (spell.HasParam("SuperCoolNumber")) then
+		localCoolNumber = tonumber(spell.Param("SuperCoolNumber"))
+    end
+    -->
+    <Params></Params>
+    <!--
+      0 - Gray/Colorless (Common)
+      1 - Blue (Rare)
+      2 - Purple (Epic)
+      3 - Golden (Legendary)
+      4 - Rainbow (Calamity)
+    -->
+    <Rarity></Rarity>
+    <!--Number of shots to fire-->
+    <Shots></Shots>
+    <!--Duration (in seconds) a shot will stay on screen-->
+    <ShotDuration></ShotDuration>
+    <!--Speed of shot-->
+    <ShotVelocity></ShotVelocity>
+    <!--Time between casting and the first shot-->
+    <ShotDelay></ShotDelay>
+    <!--Time between any shot and the next one-->
+    <TimeBetweenShots></TimeBetweenShots>
+    <!--
+      Weapon - This is a weapon for a hero, will never be dropped as a reward.
+      Player - Included in the player's drop pool. Excluding this tag will make the spell not drop.
+      PvP - Included in the PvP random spells.
+      Cpu - Not in the player’s drop pool, but in enemies’ random pool.
+      Base - Small pool that always shows up during rewards.
+      Negative - Never appears as a reward. (i.e. from chests) [Meta tag, doesn’t do anything]
+      
+      Drone - Homing missle spell. [Meta tag, doesn’t do anything?]
+      Gem - Categorizes gem spells. [Meta tag, doesn’t do anything]
+      Flower - Categorizes flower spells. [Meta tag, doesn’t do anything]
+
+      Demo - Spell could show up in the demo version. Doesn't do anything.
+      Live - Same as demo but for live events. Doesn't do anything.
+      BonusRe - Demo unlock flag for beaing Reva. Doesn't do anything.
+      BonusSK - Demo unlock flag for beaing Shopkeeper. Doesn't do anything.
+      BonusNG - Demo unlock flag for beaing Hellmode. Doesn't do anything.
+      (formerly known as "new game +") 
+    -->
+    <Tags></Tags>
+    <!--How for how many tiles the spell will activate, e.g. 3 for Blade Rain, 2 for Beam Crystals. Usually 1.-->
+    <Tiles></Tiles>
+    <!--Action to happen on the tile the was hit by the spell, e.g. leave a flame or summon a turret on it.-->
+    <TouchTile></TouchTile>
+    <!--Action to do if you have trinity (i.e. when this spell is trinitycast)-->
+    <TrinityCast></TrinityCast>
+    <!--An individual timer (in seconds) for the duration of a warning highlight-->
+    <WarningDuration></WarningDuration>
+  </Spell>
+
   <Spell itemID="PlaceholderWeapon">
     <Stats cooldown="0.5"></Stats>
     <HitAllies></HitAllies>
