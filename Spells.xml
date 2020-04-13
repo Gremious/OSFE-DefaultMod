@@ -77,7 +77,7 @@
     Base - Small pool that always shows up during rewards.
     Negative - Never appears as a reward. (i.e. from chests) [Meta tag, doesn’t do anything]
     
-    Drone - Homing missle spell. [Meta tag, doesn’t do anything?]
+    Drone - Drone tagged spells don't trigger Fragile stacks and certain artifacts. Usually used for small missle-like attacks.
     Gem - Categorizes gem spells. [Meta tag, doesn’t do anything]
     Flower - Categorizes flower spells. [Meta tag, doesn’t do anything]
     
