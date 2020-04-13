@@ -17,7 +17,7 @@
     <InvulLength>0</InvulLength>
     <Defense>0</Defense>
     <LerpTime>0.1</LerpTime>
-    <Deck>BladeRain</Deck>
+    <Deck>ModSpell</Deck>
     <Deck>ModSpell</Deck>
     <Artifacts>SubTank</Artifacts>
     <Stats localGunPointPos="30,30" animName="Default" splashSprite="DefaultSplash"
