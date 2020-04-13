@@ -1,48 +1,54 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <Spells>
   <Spell itemID="EmptySpell">
-    <!--   
+    <!--
+    =============== ANIMATIONS =================
     animCast - Animation name to play on spell cast
     animHit - Animation name to play on spell hitting target
     animBlast - Animation name to play on the location the spell lands, regardless if it hits anything
-    animShot - Bullet/Shot animation to play
-    animObj - Anything that's not a bullet: Bombs, Turrets (summons), Hazel boss' crushers, etc. 
-    animWarning - The "danger/catch/heal" tile animation that plays on the tile the spell will land on. 
+    animShot - The bullet/shot that the spell fires
+    animObj - If the spell fires anything that's not a bullet: Bombs, Turrets (summons), Hazel boss' crushers, etc. 
+    animWarning - The "danger/catch this here/heal" tile animation that plays on the tile the spell will land on.
     arcType - The arc the spell shot will make while traveling: Normal, Wild, WildBi, or CastSlot. See Arc() in Projectile.cs.
     bending - The size of the bend in the arc
-    castSound - Sound to play on cast
-    cooldown - Cooldown before the spell can be cast again. Usually used on weapons.
-    dashDistance - ???
-    dashHeight - ???
-    destroyOnDeath - Destroy spell if the being that cast it dies (usually used for enemmy spells)
-    effectLayer - If true, adds the spell to the "Effects" sorting layer in the spriteRenderer. What impact that actually has, idk.
-    faceVelocity - ???
-    fireAnim - Whether to trigger the weapon-firing animation (e.g. for laser shots)
-    fireAnimLate - Whether to trigger the weapon-firing animation, but a bit later.
-    fireLoop - Whether to trigger and loop the weapon firing animation. Can be Normal, PerShot, PerTile or While.
-    hitSound - Sound to play on hit.
-    hitboxHeight -  Hitbox height in tiles. Defaults to 1.
-    hitboxWidth - Hitbox width in tiles. Defaults to 1.
-    
-    hitboxOffsetX - The X offset of the spell, in tiles, e.g. whether a shot will hit from a tile above or below.
-    hitboxOffsetY - The Y offset of the spell, in tiles, e.g. whether a shot will hit from a tile behind or in front.
+    yVariance - A max value for a random variance in the Y of the spell shot. (e.g. machine-gun bullets not being on the same straight line) 
+    setToGunPoint - Whether the spell should be fired from the enteties gunpoint position (Hero's/Enemy's Gunpoint Position as defined in their xml). Usually false.
     spawnOffsetX - The X offset of the spell "object" in tiles, e.g. whether the shot appears in a tile above or below.
     spawnOffsetY - The Y offset of the spell "object" in tiles, e.g. whether the shot appears in a behind or in front.
-    (NOTE: these can be set to, for example, "-0.25" for more precision)
-    
-    introDelay - ???
-    introSound - Sound to play
     lineTracer - The color of the shot tracer, eg "#b832d0" (red) for laser shots.
-    onHitTriggerArts - ??? Whether to trigger the artifacts of the being being hit with the spell when it hits.
+    fireAnim - Whether to trigger the weapon-firing animation of the player/cpu (e.g. for laser shots)
+    fireAnimLate - Whether to trigger the weapon-firing animation, but a bit later.
+    fireLoop - Whether to trigger and loop the weapon firing animation. Can be Normal, PerShot, PerTile or While.
+    effectLayer - If true, adds the spell to the "Effects" sorting layer in the spriteRenderer. What impact that actually has, idk.
+    =============== /ANIMATIONS/ =================
+    =============== HITBOX =================
+    hitboxOffsetX - The X offset of the spell, in tiles, e.g. whether a shot will hit from a tile above or below.
+    hitboxOffsetY - The Y offset of the spell, in tiles, e.g. whether a shot will hit from a tile behind or in front.
+    (NOTE: Any of the 4 offest values can be set to, for example, "-0.25" for more precision)
+    hitboxHeight -  Hitbox height in tiles. Defaults to 1.
+    hitboxWidth - Hitbox width in tiles. Defaults to 1.
+    timeToTravel - The time it takes for the projectile to reach it's destination. Sometimes used to indicate how long a warning will last.
+    destroyOnDeath - Whether the spell is destroyed if the being that cast it dies (usually used for enemmy spells)
+    =============== /HITBOX/ =================
+    =============== SOUNDS =================
+    castSound - Sound to play on cast
+    introSound - ???
+    shotSound - A sound to play whenever any shot is fired.
+    hitSound - Sound to play on hit.    
+    warningSound - ??? Sound to play when a warning appears.
+    =============== /SOUNDS/ =================
+    =============== MISC =================
+    cooldown - Cooldown before the spell can be cast again. Usually used on weapons.
     pierceDefense - Whether the spill will ignore defence.
     pierceShield - Whether the spill will ignore shield.
     recoveryTime - A wait period after the spell is cast, usually used for dashes to indicate how long you remain on the enemy field.
-    setToGunPoint - Whether the spell should be fired from the enteties gunpoint position (Hero's/Enemy's Gunpoint Position as defined in their xml). Usually false.
-    shotSound - A sound to play whenever any shot is fired.
+    =============== /MISC/ =================
+    onHitTriggerArts - ??? Whether to trigger the artifacts of the being being hit with the spell when it hits.
+    introDelay - ???
     slashLocation - ???
-    timeToTravel - The time it takes for the projectile to reach it's destination. Also used to indicate how long a warning will last.
-    warningSound - ??? Sound to play when a warning appears.
-    yVariance - A max value for a random variance in the Y of the spell shot. (e.g. machine-gun bullets not being on the same straight line) 
+    dashDistance - ???
+    dashHeight - ???
+    faceVelocity - ???
     -->
     <Stats></Stats>
     <!--Register a lua function by name to be called on cast-->
