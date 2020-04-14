@@ -61,7 +61,7 @@
     recoveryTime - A wait period after the spell is cast, usually used for dashes to indicate how long you remain on the enemy field.
     =============== /MISC/ =================
     onHitTriggerArts - ??? Whether to trigger the artifacts of the being being hit with the spell when it hits.
-    slashLocation - ???
+    slashLocation - The location of the actual damaging "shot" (slash) of a slash attack relative to the spell origin (after the dash lands). Usually 1.
     dashDistance - ???
     dashHeight - ???
     faceVelocity - ???
