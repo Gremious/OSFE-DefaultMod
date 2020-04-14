@@ -97,12 +97,11 @@
     <Description></Description>
     <!--Spell flavortext-->
     <Flavor></Flavor>
-    <!--???-->
+    <!--Localized description, if not set. If a localized desc. cannot be found, this field is used instead.-->
     <MetaDISABLED></MetaDISABLED>
     <!--=============== /INFO/ =================-->
     <!-- 
-    For a full list of possible pre-existing actions, see the officla modding google doc here:
-    https://docs.google.com/document/d/1UUzJ9vVBsSVATHjzDGdZrsVPzNhf8Iy_PfPWfkghUZI/edit#heading=h.i633x46egyzr
+    For a full list of possible pre-existing actions, see the officla modding google doc here: https://docs.google.com/document/d/1UUzJ9vVBsSVATHjzDGdZrsVPzNhf8Iy_PfPWfkghUZI/edit#heading=h.i633x46egyzr
     There, you will also find a list of the Targets you can use for the OnHit action mentioned below.
     -->
     <!--=============== ACTIONS =================-->
@@ -205,6 +204,44 @@
     <Description>Second Description.</Description>
     But only the second description will display.
     -->
+  </Spell>
+  
+  <Spell itemID="EmptyUncommentedSpell">
+    <Stats></Stats>
+    <Tags></Tags>
+    <Name></Name>
+    <Description></Description>
+    <Flavor></Flavor>
+    <MetaDISABLED></MetaDISABLED>
+    <Action></Action>
+    <OnCast></OnCast>
+    <OnHit></OnHit>
+    <TouchTile></TouchTile>
+    <Hold></Hold>
+    <Flow></Flow>
+    <TrinityCast></TrinityCast>
+    <Execute></Execute>
+    <CastDuration></CastDuration>
+    <CastDelay></CastDelay>
+    <DestroyOnHit></DestroyOnHit>
+    <HitAllies></HitAllies>
+    <HitEnemies></HitEnemies>
+    <HitSelf></HitSelf>
+    <HitStructures></HitStructures>
+    <Location></Location>
+    <Tiles></Tiles>
+    <WarningDuration></WarningDuration>
+    <BlastDuration></BlastDuration>
+    <Shots></Shots>
+    <ShotDuration></ShotDuration>
+    <ShotVelocity></ShotVelocity>
+    <ShotDelay></ShotDelay>
+    <TimeBetweenShots></TimeBetweenShots>
+    <Damage></Damage>
+    <Mana></Mana>
+    <Brand></Brand>
+    <Rarity></Rarity>
+    <Params></Params>
   </Spell>
 
   <Spell itemID="PlaceholderWeapon">
