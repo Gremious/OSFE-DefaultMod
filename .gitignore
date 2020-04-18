@@ -1,6 +1,8 @@
+#This Project
+*.psd
 *.class
 
-# IntelliJ
+# JetBrains
 .idea/
 out/
 *.iml
@@ -9,24 +11,6 @@ out/
 *.code-workspace
 *.vscode
 
-# Eclipse
-.classpath
-.project
-.settings/
-
-# maven build target
-target/
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.ear
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
 
 # =========================
 # Operating System Files
@@ -78,10 +62,3 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-
-# Spriter files
-*.autosave.scml
-
-#This Project
-*.psd
-Other Mods*
