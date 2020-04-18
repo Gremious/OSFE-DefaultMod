@@ -2,6 +2,9 @@
 *.psd # Up to you whether you want to share your psd files.
 *.dll # Don't want compiled binaries, we only need to share the source code.
 *.pdb
+*.DotSettings*
+*.cache
+*.csproj*.txt
 
 # JetBrains
 .idea/
